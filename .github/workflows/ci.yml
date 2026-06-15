@@ -24,6 +24,8 @@ jobs:
 
       # Compile, run tests, and generate JaCoCo report in one shortcut
       - name: Build and test with Coverage
+        env:
+          FIREBASE_CREDENTIALS_JSON: ${{ secrets.FIREBASE_CREDENTIALS_JSON }}
         run: mvn clean verify -B
 
       # SonarCloud analysis that automatically retrieves the test coverage report(JaCoCo)
