@@ -20,7 +20,6 @@ public class FirebaseConfig {
 
     @PostConstruct
     public void initialize() throws IOException {
-        System.out.println(firebaseCredentialsJson);
         InputStream serviceAccount = new ByteArrayInputStream(firebaseCredentialsJson.getBytes(StandardCharsets.UTF_8));
 
         FirebaseOptions options = FirebaseOptions.builder()
