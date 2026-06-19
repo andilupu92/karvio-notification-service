@@ -5,7 +5,6 @@ import com.google.firebase.messaging.Message;
 import com.google.firebase.messaging.Notification;
 import karvio.dto.request.NotificationRequest;
 import karvio.dto.response.NotificationResponse;
-import karvio.entity.NotificationHistory;
 import karvio.mapper.NotificationMapper;
 import karvio.repository.NotificationRepository;
 import karvio.repository.UserDeviceRepository;
